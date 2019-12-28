@@ -1,0 +1,31 @@
+export const postUser = (user) =>{
+  // debugger
+  return(
+    $.ajax({
+      method: "POST",
+      url: "/api/users",
+      data: { user }
+    })
+  )
+}
+export const postSession = (user) =>{
+  // debugger
+  return(
+    $.ajax({
+      method: "POST",
+      url: "/api/session",
+      data: { user }
+    })
+  )
+}
+
+
+export const deleteSession = () =>{ 
+  // debugger
+  return(
+    $.ajax({
+      method: "DELETE",
+      url: "/api/session"
+    })
+  )
+}

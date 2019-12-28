@@ -1,0 +1,88 @@
+.signup-form{
+    position: absolute;
+    width: 23%;
+    top: 0;
+    background-color: rgb(247, 188, 133);
+    padding: 5%;
+    z-index: 1;
+    margin-left: 33%;
+    margin-top: 10%;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+.login-form{
+    position: absolute;
+    width: 23%;
+    top: 0;
+    background-color: rgb(247, 188, 133);
+    padding: 5%;
+    z-index: 1;
+    margin-left: 33%;
+    margin-top: 10%;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+.already{
+    margin-bottom: -8%;
+    text-decoration: none;
+}
+
+.login-instead{
+    background-color: rgb(139, 55, 6);
+    padding: 5px 30px 5px 30px;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 33%;
+    margin-top: 10%;
+}
+
+.logout-button{
+    float: right;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    background-color: rgb(139, 55, 6);
+    padding: 5px 30px 5px 30px;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-left: 80%;
+    cursor: pointer;
+}
+
+.book-index{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    background-color: blanchedalmond;
+    margin-left: 5%;
+}
+
+.navbar{
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    background-color: cornsilk;
+    display: flex;
+    margin-left: 70%;
+}
+
+.profile-link{
+    margin-left: 10%;
+}
+
+.fav{
+    font-size: 3px;
+    color: yellow;
+    cursor: pointer;
+}
+
+.unfav{
+    font-size: 30px;
+    cursor: pointer;
+}

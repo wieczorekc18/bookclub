@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BookClub</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script type="text/javascript">
+      window.handsOnlyURL = "<%= image_url('handsOnly.jpg') %>"
+    </script>
+    <script type="text/javascript">
+      window.libURL = "<%= image_url('lib.jpg') %>"
+    </script>
+    <script type="text/javascript">
+      window.withFacesURL = "<%= image_url('withFaces.jpg') %>"
+    </script>
+    <% if logged_in? %>
+      <script id="current-user" type="text/javascript">
+        window.currentUser = {
+          "id": <%= current_user.id %>,
+          "username": "<%= current_user.username %>"
+        };
+      </script>
+    
+    <% end %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

@@ -4,10 +4,10 @@ Rails.application.routes.draw do
   root to: 'root#root'
 
   namespace :api, defaults: {format: :json} do
-    resources :users do
-      resources :favorites, only: [:index]
-    end
-
+    resources :users
+    
+    resources :favorites, only: [:index]
+    
     resource :session, only: [:create, :destroy]
 
     resources :books, only: [:create, :index, :show, :update, :destroy] do
